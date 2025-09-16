@@ -21,11 +21,11 @@ services:
       - ./kafka:/bitnami/kafka
 
   redis-stack:
-    image: redis/redis-stack:latest   # includes RedisTimeSeries, RedisJSON, etc.
+    image: redis/redis-stack:latest
     container_name: redis-stack
     ports:
-      - "6379:6379"   # Redis server
-      - "8001:8001"   # RedisInsight (GUI for browsing data)
+      - "6379:6379"
+      - "8001:8001"
     volumes:
       - redis-data:/data
 
@@ -35,8 +35,8 @@ services:
     ports:
       - "3000:3000"
     environment:
-      - GF_SECURITY_ADMIN_USER=admin
-      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_SECURITY_ADMIN_USER=${GF_SECURITY_ADMIN_USER}
+      - GF_SECURITY_ADMIN_PASSWORD=${GF_SECURITY_ADMIN_PASSWORD}
     volumes:
       - grafana-data:/var/lib/grafana
     restart: unless-stopped
@@ -45,8 +45,8 @@ services:
     container_name: postgres
     image: postgres:latest
     environment:
-      POSTGRES_USER: erickim
-      POSTGRES_PASSWORD: password
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       PGDATA: /data/postgres
     volumes:
       - db:/data/postgres
