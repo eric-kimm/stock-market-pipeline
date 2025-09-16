@@ -1,0 +1,9 @@
+### GET request to example server
+GET http://localhost:8080
+
+
+### GET request to Finnhub
+GET http://localhost:8080/stocks/AAPL
+
+### Get request to Redis
+GET http://localhost:8080/timeseries/TSLA
