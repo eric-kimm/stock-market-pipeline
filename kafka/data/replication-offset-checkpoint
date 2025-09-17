@@ -17,13 +17,13 @@ __consumer_offsets 33 0
 __consumer_offsets 41 0
 __consumer_offsets 37 0
 __consumer_offsets 8 0
-stock-trades 0 3586
+stock-trades 0 5579
 __consumer_offsets 24 0
 __consumer_offsets 49 4
 __consumer_offsets 3 0
 __consumer_offsets 40 0
 __consumer_offsets 27 0
-__consumer_offsets 17 2948
+__consumer_offsets 17 4941
 __consumer_offsets 32 4
 __consumer_offsets 39 4
 __consumer_offsets 2 0
@@ -34,7 +34,7 @@ __consumer_offsets 45 0
 __consumer_offsets 16 10
 __consumer_offsets 10 0
 __consumer_offsets 11 0
-testing 0 7579
+testing 0 11655
 __consumer_offsets 20 0
 __consumer_offsets 47 0
 __consumer_offsets 18 689
